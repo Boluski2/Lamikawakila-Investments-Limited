@@ -86,9 +86,9 @@ export default function Contact() {
       {/* Contact info strip */}
       <section className="bg-accent">
         <div className="container">
-          <div className="grid grid-cols-2 lg:grid-cols-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-accent-foreground/10">
             {contactInfo.map((item, i) => (
-              <div key={item.title} className="border-r border-accent-foreground/10 px-6 py-8 last:border-r-0">
+              <div key={item.title} className="px-6 py-8">
                 <item.icon className="mb-3 h-5 w-5 text-accent-foreground/60" />
                 <h3 className="mb-1 font-sans text-xs font-bold uppercase tracking-[0.2em] text-accent-foreground/40">{item.title}</h3>
                 {item.details.map((detail, idx) => (
