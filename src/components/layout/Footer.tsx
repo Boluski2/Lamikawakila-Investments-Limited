@@ -66,7 +66,7 @@ export function Footer() {
             <ul className="space-y-4">
               <li className="flex items-start gap-3 text-sm text-primary-foreground/60">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-                <span>Stand No. 95, President Avenue<br />Town Centre, Ndola, Copperbelt</span>
+                <span>Stand No. 95, President Avenue<br />Town Centre, Ndola, Copperbelt Province, Zambia</span>
               </li>
               <li className="flex items-center gap-3 text-sm text-primary-foreground/60">
                 <Phone className="h-4 w-4 shrink-0 text-accent" />

@@ -233,7 +233,7 @@ export default function Contact() {
               {[
                 { label: "Company Name", value: "Lamikawakila Investments Limited" },
                 { label: "PACRA Certificate", value: "120261040111", highlight: true },
-                { label: "Location", value: "Ndola, Copperbelt Province" },
+                { label: "Location", value: "Stand No. 95, President Avenue,Town Centre, Ndola, Copperbelt Province, Zambia" },
                 { label: "ISIC Classification", value: "0910" },
               ].map((item) => (
                 <div key={item.label} className="bg-background p-6">

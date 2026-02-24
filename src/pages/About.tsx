@@ -33,7 +33,7 @@ const companyDetails = [
   { label: "Incorporation Date", value: "30 January 2026" },
   { label: "Legal Structure", value: "Private Company Limited by Shares" },
   { label: "ISIC Classification", value: "0910" },
-  { label: "Headquarters", value: "Ndola, Copperbelt Province" },
+  { label: "Headquarters", value: "Stand No. 95, President Avenue,Town Centre, Ndola, Copperbelt Province, Zambia" },
 ];
 
 export default function About() {
@@ -93,9 +93,11 @@ export default function About() {
             >
               <div className="border-l-2 border-accent bg-card">
                 {companyDetails.map((item, i) => (
-                  <div key={item.label} className={`flex justify-between px-6 py-4 ${i !== companyDetails.length - 1 ? "border-b border-border" : ""}`}>
-                    <span className="text-sm text-muted-foreground" style={{ textTransform: "none", letterSpacing: "normal" }}>{item.label}</span>
-                    <span className={`text-sm font-semibold ${item.highlight ? "text-accent" : "text-foreground"}`} style={{ textTransform: "none", letterSpacing: "normal" }}>{item.value}</span>
+                  <div key={item.label} className={`px-6 py-4 ${i !== companyDetails.length - 1 ? "border-b border-border" : ""}`}>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 items-start sm:items-center">
+                      <span className="text-sm text-muted-foreground" style={{ textTransform: "none", letterSpacing: "normal" }}>{item.label}</span>
+                      <span className={`mt-1 sm:mt-0 text-sm font-semibold ${item.highlight ? "text-accent" : "text-foreground"} break-words`} style={{ textTransform: "none", letterSpacing: "normal" }}>{item.value}</span>
+                    </div>
                   </div>
                 ))}
               </div>
