@@ -62,7 +62,7 @@ export default function Contact() {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('http://localhost:3000', {
+      const response = await fetch('karkencompany-backend.vercel.app', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
